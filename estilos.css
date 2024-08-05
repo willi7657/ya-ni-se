@@ -1,0 +1,71 @@
+.cielo {
+	background-image: url('bg2.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+  }
+  
+  .estrella {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 24px;
+	color: #fff;
+	animation: caer 10s linear infinite;
+  }
+  
+  @keyframes caer {
+	0%{
+	  transform: translateX(100vw) translateY(0);
+	}
+	100% {
+	  transform: translateX(-100vw) translateY(100vh);
+	}
+  }
+  
+  #estrella1 {
+	animation-delay: 0s;
+  }
+  
+  #estrella2 {
+	animation-delay: 0.5s;
+  }
+  
+  #estrella3 {
+	animation-delay: 1s;
+  }
+  #estrella4 {
+	animation-delay:  1.5;
+  }
+  
+  
+  
+  .reproductor-container {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 200px;
+	height: 30px;
+	background-color: #444;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+	width: 40px;
+	height: 20px;
+	background-color: #666;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #555;
+}
